@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>muna web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="menu-bar">
+            <h2 style="float:left; color:gold;padding-left: 15px;">CAKE <span style="color: green;"> STORE</span></h2>
+            <ul>
+                <li ><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li ><a href="shop.html"><i class="fa fa-shopping-cart"></i>Shop</a></li>
+                <li ><a href="about.html"><i class="fa fa-users"></i>About</a></li>
+                <li class="active"><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+            </ul>
+        </div>
+        <section class="contact">
+            <div class="content">
+                <header>Contact Us</header>
+                <p>Joylenes bakery for your sweet cravings</p>
+            </div>
+            <div class="container">
+                <div class="box" style="color:blue;margin-left: 1%;">
+                    <div class="icon"><a href=""><i class="fa fa-map-marker" aria-hidden="true" style="color:gold;"></i></a></div>
+                    <div class="text">
+                        <h5 style="color: white;">Address</h5>
+                        <p style="color: black;">Banquet center,<br>westlands<br>Nairobi,Kenya</p>
+                    </div>
+                </div><br>
+
+                <div class="box" style="color:blue;margin-left: 1%;">
+                    <div class="icon"><a href=""><i class="fa fa-phone" aria-hidden="true" style="color:gold;"></i></a></div>
+                    <div class="text">
+                        <h5 style="color: white;">Phone</h5>
+                        <p style="color: black;">+254739693603</p>
+                    </div>
+                </div><br>
+
+                <div class="box" style="color:blue;margin-left: 1%;">
+                    <div class="icon"><a href="mailto:joylene'sbakery@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:gold;"></i></a></div>
+                    <div class="text">
+                        <h5 style="color: white;">Email</h5>
+                        <p style="color: black;">joylene'sbakery@gmail.com</p>
+                    </div>
+                </div><br>
+
+                <div class="contactForm">
+                    <form >
+                        <h6>Send Message</h6>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required"><span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required"><span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea><span>Type Your Message</span>
+                        </div>
+                        <div class="container">
+                            <button type="submit"class="hero-btn red-btn" onclick="openPopup()" style="box-shadow:10px 10px 50px 10px purple;border-radius: 60px;
+                            border:1px solid black;padding: 10px 60px;background-color: green;">Send</button>
+                            <div class="popup" id="popup">
+                                <img src="" alt="tick">
+                                <h2>Thank You</h2>
+                                <p style="color: #333333;">Your message has been successfully submitted.
+                                  <br>Thanks! For Reaching Us.</p>
+                                <button type="button" onclick="closePopup()" style="box-shadow:10px 10px 50px 10px purple;padding: 10px 60px;">OK</button>
+                            </div>
+                            </div>
+                        <!--<div class="inputBox">
+                            <input type="Submit" name="" value="Send">
+                        </div>-->
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
+                <div class="footer-content">
+                    <h4>JOYLENES BAKERY</h4>
+                    <p>Here we offer you nothing but the best freshly<br>baked salvating products.</p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fab fa-facebook" ></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p style="color: gold;">Copyright @2023:Designed by <span style="color: white;"> Munasye</span></p>
+                </div>
+            </footer>
+        </section>
+        <script>
+            let popup = document.getElementById("popup");
+          
+            function openPopup(){
+                popup.classList.add("open-popup")
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup")
+            }
+          </script>
+    </body>
+</html>
