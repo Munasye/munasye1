@@ -523,3 +523,17 @@ footer{
     opacity: .4;
     font-weight: bold;
 }
+@media only screen and(max-width:600px){
+    body{
+        font-size: 14px;
+        }
+    }
+@media only screen and(max-width:600px){
+    body{
+        font-size: 16px;
+        }
+    }
+.move-right{
+    float: right;
+    }
+@
